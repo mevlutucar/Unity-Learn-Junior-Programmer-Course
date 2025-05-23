@@ -809,8 +809,8 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
-  - component: {fileID: 534669906}
   - component: {fileID: 534669907}
+  - component: {fileID: 534669908}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -886,24 +886,12 @@ Transform:
   m_GameObject: {fileID: 534669902}
   serializedVersion: 2
   m_LocalRotation: {x: 0.24192186, y: 0.0002815476, z: -0.000109900095, w: 0.9702957}
-  m_LocalPosition: {x: 2.5, y: 5.741873, z: -34.47}
+  m_LocalPosition: {x: 0.009859085, y: 7.503107, z: -18.16782}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1385500138}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 28, y: 0.032, z: -0.005}
---- !u!114 &534669906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f67d2766c80eb9542b45f4bd9d02639a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &534669907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,6 +936,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &534669908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e6f58eb7f5d9e449b956e1274faf24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1495178072}
+  offset: {x: 0, y: 7.5, z: -7.5}
 --- !u!1 &564375900 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1990293589767515956, guid: 367149bd17c4d4d4e8868ec6a5cf8d45, type: 3}
@@ -1665,7 +1667,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 534669905}
   - {fileID: 1312232381}
   - {fileID: 2093379048}
   - {fileID: 974359750}
@@ -1689,7 +1690,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def3111dc3148714aa9d154d022a94bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicleSpeed: 30
+  vehicleSpeed: 15
+  turnSpeed: 100
+  horizontalInput: 0
+  forwardInput: 0
 --- !u!54 &1495178077
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2313,6 +2317,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 534669905}
   - {fileID: 170076735}
   - {fileID: 1385500138}
   - {fileID: 753654412}
