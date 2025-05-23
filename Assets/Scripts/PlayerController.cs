@@ -8,11 +8,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float turnSpeed;
 
     [SerializeField] float horizontalInput, forwardInput;
-    void Start()
-    {
-        
-    }
-
 
     void Update()
     {
