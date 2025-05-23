@@ -12,3 +12,9 @@ Bu repo, Unity tarafından, Unity 6 sürümüne yönelik; path olarak yayınlam�
 
 ![roadGame2](https://github.com/user-attachments/assets/45999467-a209-44a4-b51c-1c4ba12b1a31)
 
+## Camera Switch
+
+![roadGame3](https://github.com/user-attachments/assets/80d15896-42a2-440a-8bbd-1c08c8474557)
+
+
+
